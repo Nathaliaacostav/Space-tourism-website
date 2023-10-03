@@ -1,0 +1,9 @@
+.main {
+    &__container{
+        margin: 10%;
+        @media screen and (max-width: 873px)  {
+            margin: 5%;
+            margin-top: 20%;
+        }
+    }
+}

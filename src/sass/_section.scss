@@ -1,0 +1,141 @@
+@use "mixins";
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+$font-josefin: "Josefin Sans", sans-serif;
+$font-alata: "Alata", sans-serif;
+$dark-gray: hsl(0, 0%, 55%);
+$very-dark-gray: hsl(0, 0%, 41%);
+
+.section {
+  &__one {
+    display: flex;
+    position: relative;
+    padding-bottom: 10%;
+    @media screen and (max-width: 873px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__two {
+    display: block;
+    @media screen and (max-width: 873px) {
+      position: relative;
+    }
+  }
+  &__article {
+    position: absolute;
+    width: 40%;
+    background-color: hsl(0, 0%, 100%);
+    top: 30%;
+    left: 47%;
+    padding-left: 8%;
+    padding-top: 4%;
+    padding-right: 8%;
+    @media (min-width: 874px) and (max-width: 1106px) {
+      padding-left: 4%;
+      padding-top: 2%;
+      padding-right: 4%;
+    }
+    @media screen and (max-width: 873px) {
+      width: 100%;
+      position: static;
+      padding: 0;
+      text-align: center;
+    }
+    &--title {
+      @include mixins.title;
+      margin-bottom: 1%;
+    }
+    &--text {
+      font-size: 90%;
+      color: $dark-gray;
+      font-family: $font-alata;
+      @media screen and (max-width: 873px) {
+        font-size: 80%;
+      }
+    }
+    &--header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &--title {
+        @include mixins.title;
+      }
+    }
+    &--button {
+      position: static;
+      width: 15%;
+      font-size: 90%;
+      font-weight: 500;
+      padding-bottom: 1%;
+      padding-top: 1%;
+      font-family: $font-alata;
+      background-color: hsl(0, 0%, 100%);
+      border: 2px solid $very-dark-gray;
+      letter-spacing: 4px;
+      @media screen and (max-width: 873px) {
+        width: 40%;
+        position: absolute;
+        top: 100%;
+        left: 30%;
+      }
+      &:hover {
+        cursor: pointer;
+        background-color: hsl(0, 0%, 0%);
+        border-color: hsl(0, 0%, 0%);
+        color: hsl(0, 0%, 100%);
+      }
+    }
+    &--figures {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      @media screen and (max-width: 873px) {
+        width: 100%;
+        flex-wrap: nowrap;
+        flex-direction: column;
+      }
+    }
+  }
+  &__figure {
+    width: 60%;
+    @media screen and (max-width: 873px) {
+      width: 100%;
+    }
+    @include mixins.figure;
+    &--options {
+      position: relative;
+      width: 23%;
+      padding: 1%;
+      @include mixins.figure;
+      @media screen and (max-width: 873px) {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 5%;
+      }
+      p {
+        position: absolute;
+        top: 70%;
+        left: 20%;
+        font-size: 200%;
+        color: hsl(0, 0%, 100%);
+        @media screen and (max-width: 873px) {
+          top: 0%;
+        }
+        @media (min-width: 874px) and (max-width: 1106px) {
+          font-size: 150%;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        img {
+          filter: brightness(100%) opacity(50%);
+        }
+        p {
+          color: hsl(0, 0%, 0%);
+        }
+      }
+    }
+  }
+}

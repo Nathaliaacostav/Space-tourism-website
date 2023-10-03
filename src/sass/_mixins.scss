@@ -1,0 +1,22 @@
+@mixin figure {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    img {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+}
+
+@mixin title {
+    font-size: 290%;
+    font-weight: 500;
+    color: hsl(0, 0%, 0%);
+    @media (min-width:874px) and (max-width: 1106px)  {
+        font-size: 200%;
+    }
+    @media screen and (max-width: 873px)  {
+        font-size: 170%;
+    }
+}

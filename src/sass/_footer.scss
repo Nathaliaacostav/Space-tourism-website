@@ -1,0 +1,105 @@
+/* Footer Container */
+.footer-container {
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.left-section{
+    padding-left: 10%;
+}
+
+.right-section{
+    padding-right: 10%;
+}
+  
+  /* Logo */
+.logo {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 10px;
+}
+  
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+}
+  
+.footer-list li {
+    margin-right: 20px;
+    font-size: 15px; /* Espacio entre los elementos de la lista */
+    cursor: pointer;
+    position: relative;
+    transition: border-bottom 0.3s;
+    border-bottom: 2px solid transparent; 
+}
+.footer-list li:hover {
+    border-bottom: 2px solid #fff; /* Muestra la línea al pasar el mouse */
+}
+  
+  /* Social Icons */
+.social-icons { 
+    margin-left: 120px;
+    font-size: 20px;
+}
+  
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 25px;
+    position: relative;
+    transition: border-bottom 0.3s; /* Agrega una transición a la línea */
+    border-bottom: 2px solid transparent; /* Inicialmente, oculta la línea */
+}
+.social-icons a:hover{
+    border-bottom: 2px solid #fff; /* Muestra la línea al pasar el mouse */
+}
+  
+  /* Copyright Text */
+.copyright {
+    font-size: 15px;
+    color: #918e8e;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+    }
+    .left-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .footer-list li{
+        margin: 0;
+    }
+    .right-section{
+        padding: 0;
+    }
+    .social-icons a{
+        margin-right: 0;
+    }
+    .social-icons{
+        display: flex;
+        margin: 0;
+        justify-content: space-around;
+        margin-top: 10%;
+    }
+    .copyright{
+        text-align: center;
+    }
+}

@@ -1,0 +1,30 @@
+@use "main";
+@use "section";
+@use "footer";
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+$font-alata: "Alata", sans-serif;
+$font-josefin: "Josefin Sans", sans-serif;
+$font-size: 15px;
+$white: #fff;
+$black: #000;
+$dark-gray: hsl(0, 0%, 55%);
+$very-dark-gray: hsl(0, 0%, 41%);
+$horizontal-padding: 10vw;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: $font-size;
+}
+body {
+  font-family: $font-alata;
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
