@@ -1,4 +1,7 @@
+import React from "react";
 import launch from "/public/launch-vehicle.jpg";
+import spaceport from "/public/spaceport.jpg";
+import spacecapsule from "/public/spacecapsule.jpg";
 import "../sass/global.scss";
 
 function TechnologyContent() {
