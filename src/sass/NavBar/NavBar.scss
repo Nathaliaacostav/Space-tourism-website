@@ -1,0 +1,32 @@
+.navDestock
+{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 5rem;
+    background-color: black;
+    height: 5rem;
+    &__navegacion
+    {
+        display: flex;
+        font-size: 1.5rem;
+        list-style: none;
+
+        &__link
+        {
+            & a
+            {
+                text-decoration: none;
+                color: white;
+                margin-right: 1.5rem;
+                
+                &:hover
+                {
+                    cursor: pointer;
+                    border-bottom: 4px solid white;
+                }
+            }
+            
+        }
+    }
+}
