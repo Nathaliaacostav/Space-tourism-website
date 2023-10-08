@@ -1,38 +1,31 @@
-
-.navDestock
-{
-    position: absolute;
+.navDestock {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(7px);
+  right: 0;
+  height: 5rem;
+  top: 2rem;
+  &__navegacion {
+    padding-right: 5rem;
     display: flex;
-    align-items: center;
-    justify-content: end;
-    background-color: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(7px);
-    right: 0;
-    height: 5rem;
-    top: 2rem;
-    &__navegacion
-    {
-        padding-right: 5rem;
-        display: flex;
-        font-size: 16px;
-        list-style: none;
-        font-family: 'Barlow', sans-serif;
-        font-weight: 400;
-        &__link
-        {
-            & a
-            {
-                text-decoration: none;
-                color: white;
-                margin-right: 1.5rem;
-                text-transform: uppercase;
-                &:hover
-                {
-                    cursor: pointer;
-                    border-bottom: 4px solid white;
-                }
-            }
-            
+    font-size: 16px;
+    list-style: none;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    &__link {
+      & a {
+        text-decoration: none;
+        color: white;
+        margin-right: 1.5rem;
+        text-transform: uppercase;
+        &:hover {
+          cursor: pointer;
+          border-bottom: 4px solid white;
         }
+      }
     }
+  }
 }
