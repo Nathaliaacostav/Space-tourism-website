@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-import { Link } from 'react-router-dom';
-import '../../sass/NavBar/NavBar.scss';
-
-const NavBar = () => {
-    const items = [
-        ['00', 'home'],
-        ['01','destination'],
-        ['02', 'crew'],
-        ['03', 'technology'],
-    ]
-=======
 import { Link } from "react-router-dom";
 import "../../sass/NavBar/NavBar.scss";
 
@@ -20,7 +8,6 @@ const NavBar = () => {
     ["02", "crew"],
     ["03", "technology"],
   ];
->>>>>>> ce33368 (add destination view)
   return (
     <div className="navDestock">
       <nav>
