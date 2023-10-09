@@ -19,8 +19,10 @@ const DivContainer = styled.div`
   padding-top: 180px;
   width: 100vw;
   height: 100vh;
-  background-color: #0b0d17;
-  background-image: url("/backgrounTechnology.png");
+  background-image: url("/backgrounTechnology.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   ${customMedia.lessThan("tablet")`
       width: 100vw;
@@ -32,7 +34,7 @@ const DivContainer = styled.div`
 const DivContainerTechno = styled.div`
   display: flex;
   gap: 24px;
-  padding: 0 50px;
+  padding: 0 120px;
   ${customMedia.lessThan("tablet")`
     `};
 `;
@@ -97,7 +99,7 @@ const Divbuttons = styled.div`
   align-items: center;
   position: relative;
   cursor: pointer;
-  margin: 0;
+  margin-left: 120px;
 
   ${customMedia.lessThan("tablet")`
     display: flex;
@@ -130,7 +132,7 @@ const Divtext = styled.div`
   height: 271px;
   flex-shrink: 0;
   margin-right: 80px;
-  margin-left: 80px;
+  margin-left: 40px;
   ${customMedia.lessThan("tablet")`
       display: flex;
       width: 458px;
@@ -278,6 +280,20 @@ function TechnologyContent() {
           <Imgdesktop src={items[indexActual].img} alt="img" />
           <ImgTable src={items[indexActual].table} alt="img-table" />
         </DivImg>
+
+        <DivContentSlider>
+          <Divtext>
+            <DivOnetext>
+              <p>THE TERMINOLOGY…</p>
+            </DivOnetext>
+            <DivSecondText>
+              <p>{items[indexActual].title}</p>
+            </DivSecondText>
+            <Divcontent>
+              <p>{items[indexActual].text}</p>
+            </Divcontent>
+          </Divtext>
+        </DivContentSlider>
         <Divbuttons>
           {items.map((_, idx) => {
             return (
@@ -387,19 +403,6 @@ function TechnologyContent() {
             );
           })}
         </Divbuttons>
-        <DivContentSlider>
-          <Divtext>
-            <DivOnetext>
-              <p>THE TERMINOLOGY…</p>
-            </DivOnetext>
-            <DivSecondText>
-              <p>{items[indexActual].title}</p>
-            </DivSecondText>
-            <Divcontent>
-              <p>{items[indexActual].text}</p>
-            </Divcontent>
-          </Divtext>
-        </DivContentSlider>
       </DivSlider>
     </DivContainer>
   );
