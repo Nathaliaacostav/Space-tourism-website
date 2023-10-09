@@ -29,7 +29,7 @@ const DivTextImg = styled.div`
     align-items: center;
     height: 80%;
   }
-  @media screen and (min-width: 501px) and (max-width: 1535px) {
+  @media screen and (min-width: 501px) and (max-width: 1100px) {
     flex-direction: column;
     align-items: center;
     width: 90%;
@@ -53,7 +53,7 @@ const H2 = styled.h2`
     letter-spacing: 2.7px;
     font-family: "Barlow Condensed", sans-serif;
   }
-  @media screen and (min-width: 501px) and (max-width: 1535px) {
+  @media screen and (min-width: 501px) and (max-width: 1100px) {
     padding-top: 10rem;
   }
 `;
@@ -78,7 +78,7 @@ const DivText = styled.div`
     align-items: center;
     border-top: 2px solid #383b4b;
   }
-  @media screen and (min-width: 501px) and (max-width: 1535px) {
+  @media screen and (min-width: 501px) and (max-width: 1100px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,7 +96,7 @@ const DivTextH3 = styled.h3`
     font-size: 16px;
     margin-top: 2rem;
   }
-  @media screen and (min-width: 501px) and (max-width: 1535px) {
+  @media screen and (min-width: 501px) and (max-width: 1100px) {
     font-size: 24px;
     margin-top: 4rem;
   }
@@ -113,7 +113,7 @@ const DivTextH2 = styled.h2`
     width: auto;
     margin-top: 1rem;
   }
-  @media screen and (min-width: 501px) and (max-width: 1535px) {
+  @media screen and (min-width: 501px) and (max-width: 1100px) {
     width: auto;
     font-size: 40px;
     margin-top: 0.5rem;
@@ -136,7 +136,7 @@ const DivTextP = styled.p`
     font-size: 15px;
     line-height: 25px;
   }
-  @media screen and ((min-width: 501px)and (max-width:1535px)) {
+  @media screen and ((min-width: 501px)and (max-width:1100px)) {
     font-size: 16px;
     line-height: 28px;
     width: 95%;
@@ -155,7 +155,7 @@ const DivImg = styled.img`
     height: 21rem;
     margin-top: 0;
   }
-  @media screen and ((min-width: 501px)and (max-width:1535px)) {
+  @media screen and ((min-width: 501px)and (max-width:1100px)) {
     width: auto;
     height: 20.5rem;
     margin-top: 1rem;
@@ -168,7 +168,7 @@ const DivSlider = styled.div`
     margin-top: 2rem;
     order: -1;
   }
-  @media screen and ((min-width: 501px)and (max-width:1535px)) {
+  @media screen and ((min-width: 501px)and (max-width:1100px)) {
     margin-top: 0;
   }
 `;
