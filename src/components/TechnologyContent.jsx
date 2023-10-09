@@ -9,10 +9,6 @@ import styled from "styled-components";
 import { generateMedia } from "styled-media-query";
 import "../sass/global.scss"
 
-const customMedia = generateMedia({
-  desktop: "1440px",
-  tablet: "1024px"
-});
 
 const DivContainer = styled.div`
   width: 1440px;
@@ -20,11 +16,11 @@ const DivContainer = styled.div`
   background-color: #0B0D17;
   background-image: url("/public/backgrounTechnology.png");
 
-  ${customMedia.lessThan("tablet")`
+  @media screen and (min-width: 501px)and (max-width:1100px)
       width: 768px;
       height: 1024px;
       
-  `};
+  }
 `
 const DivContainerTechno = styled.div`
     display: flex;
@@ -32,11 +28,11 @@ const DivContainerTechno = styled.div`
     margin-left: 167px;
     gap: 24px;
 
-    ${customMedia.lessThan("tablet")`
+    @media screen and (min-width: 501px)and (max-width:1100px)
         position: relative;
         right: 130px;
         top: -50px;
-    `};
+    }
 `
 const PtextNum = styled.p`
     color: #FFF;
@@ -48,7 +44,7 @@ const PtextNum = styled.p`
     letter-spacing: 4.725px;
     opacity: 0.25;
 
-    ${customMedia.lessThan("tablet")`
+    @media screen and (min-width: 501px)and (max-width:1100px)
         color: #FFF;
         font-family: Barlow Condensed;
         font-size: 20px;
@@ -56,7 +52,7 @@ const PtextNum = styled.p`
         font-weight: 700;
         line-height: normal;
         letter-spacing: 3.375px;  
-`};
+    }
 `
 const PtextTitle = styled.p`
     color: #FFF;
@@ -66,7 +62,8 @@ const PtextTitle = styled.p`
     font-weight: 400;
     line-height: normal;
     letter-spacing: 4.725px;
-    ${customMedia.lessThan("tablet")`
+
+    @media screen and (min-width: 501px)and (max-width:1100px)
       color: #FFF;
       font-family: Barlow Condensed;
       font-size: 20px;
@@ -75,20 +72,20 @@ const PtextTitle = styled.p`
       line-height: normal;
       letter-spacing: 3.375px;
       text-transform: uppercase;
-    `};
+    }
 `
 const DivSlider = styled.div`
     display: flex;
     flex-direction: row;
     margin-left: 140px;
 
-    ${customMedia.lessThan("tablet")`
+     @media screen and (min-width: 501px)and (max-width:1100px)
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
     cursor: pointer;
-  `};
+    }
 `
 const Divbuttons = styled.div`
   display: flex;
@@ -97,7 +94,7 @@ const Divbuttons = styled.div`
   position: relative;
   cursor: pointer;
 
-  ${customMedia.lessThan("tablet")`
+  @media screen and (min-width: 501px)and (max-width:1100px)
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -106,7 +103,7 @@ const Divbuttons = styled.div`
     top: 300px;
     right: 70px;
     cursor: pointer;
-  `};
+    }
 `
 const DivbuttonsItem = styled.div`
     margin: 10px;
@@ -117,14 +114,14 @@ const DivContentSlider = styled.div`
     justify-content: space-between;
     align-items: center;
 
-    ${customMedia.lessThan("tablet")`
+    @media screen and (min-width: 501px)and (max-width:1100px)
     display: flex;
     width: 458px;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     gap: 16px;
-  `};
+    }
 `
 const Divtext = styled.div`
       width: 500px;
@@ -132,14 +129,14 @@ const Divtext = styled.div`
       flex-shrink: 0;
       margin-right: 80px;
       margin-left: 80px;
-      ${customMedia.lessThan("tablet")`
-      display: flex;
-      width: 458px;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 16px;
-    `};
+      @media screen and (min-width: 501px)and (max-width:1100px)
+        display: flex;
+        width: 458px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+      }
 `
 const DivOnetext = styled.div`
     color: #D0D6F9;
@@ -149,7 +146,7 @@ const DivOnetext = styled.div`
     font-weight: 400;
     line-height: normal;
     letter-spacing: 2.7px;
-    ${customMedia.lessThan("tablet")`´
+    @media screen and (min-width: 501px)and (max-width:1100px)
           display: flex;      
           position: relative;
           top: 50px;
@@ -160,7 +157,7 @@ const DivOnetext = styled.div`
           font-weight: 400;
           line-height: normal;
           letter-spacing: 2.7px;
-    `};
+    }
     
 `
 const Divcontent = styled.div`
@@ -170,7 +167,7 @@ const Divcontent = styled.div`
       font-style: normal;
       font-weight: 400;
       line-height: 32px;
-      ${customMedia.lessThan("tablet")`
+      @media screen and (min-width: 501px)and (max-width:1100px)
           color: #D0D6F9;
           text-align: center;
           font-family: Barlow;
@@ -178,7 +175,7 @@ const Divcontent = styled.div`
           font-style: normal;
           font-weight: 400;
           line-height: 28px; /* 175% */
-      `};
+      }
 `
 
 const DivSecondText = styled.div`
@@ -189,7 +186,7 @@ const DivSecondText = styled.div`
     font-weight: 400;
     line-height: normal;
 
-    ${customMedia.lessThan("tablet")`
+    @media screen and (min-width: 501px)and (max-width:1100px)
       color: #FFF;
       text-align: center;
       font-family: Bellefair;
@@ -198,40 +195,40 @@ const DivSecondText = styled.div`
       font-weight: 400;
       line-height: normal;
       text-transform: uppercase;
-    `};
+    }
 `
 const DivImg = styled.div`
-    ${customMedia.lessThan("tablet")`
-      width: 768px;
-      height: 310px;
-      position: relative;
-      top: -110px;
-    `};
+  @media screen and (min-width: 501px)and (max-width:1100px)
+        width: 768px;
+        height: 310px;
+        position: relative;
+        top: -110px;
+      }
 `
 const Imgdesktop = styled.img`
       display: bock;
-    ${customMedia.lessThan("tablet")`
+      @media screen and (min-width: 501px)and (max-width:1100px)
       display: none;
-    `};
+      }
 `
 const ImgTable = styled.img`
     display: none;
-    ${customMedia.lessThan("tablet")`
+    @media screen and (min-width: 501px)and (max-width:1100px)
       display: block;
-    `};
+    }
 `
 const SvgDesktop = styled.svg`
     display: block;
-    ${customMedia.lessThan("tablet")`
+    @media screen and (min-width: 501px)and (max-width:1100px)
       display: none;
-  `};
+    }
 `
 
 const SvgTable = styled.svg`
     display: none;
-    ${customMedia.lessThan("tablet")`
+    @media screen and (min-width: 501px)and (max-width:1100px)
       display: block;
-  `};
+    }
 `
 
 function TechnologyContent() {
