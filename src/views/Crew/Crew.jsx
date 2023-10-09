@@ -10,13 +10,12 @@ const DivPrincipal = styled.div`
 `;
 
 const DivContainer = styled.div`
-  height: 100%;
-  width: 100%;
   padding-left: 12rem;
+
   @media screen and (max-width: 500px) {
     padding-left: 0;
   }
-  @media screen and (min-width: 501px) and (max-width: 1023px) {
+  @media screen and (min-width: 501px) and (max-width: 1535px) {
     padding-left: 2.5rem;
   }
 `;
@@ -30,7 +29,7 @@ const DivTextImg = styled.div`
     align-items: center;
     height: 80%;
   }
-  @media screen and (min-width: 501px) and (max-width: 1023px) {
+  @media screen and (min-width: 501px) and (max-width: 1535px) {
     flex-direction: column;
     align-items: center;
     width: 90%;
@@ -54,7 +53,7 @@ const H2 = styled.h2`
     letter-spacing: 2.7px;
     font-family: "Barlow Condensed", sans-serif;
   }
-  @media screen and (min-width: 501px) and (max-width: 1023px) {
+  @media screen and (min-width: 501px) and (max-width: 1535px) {
     padding-top: 10rem;
   }
 `;
@@ -79,7 +78,7 @@ const DivText = styled.div`
     align-items: center;
     border-top: 2px solid #383b4b;
   }
-  @media screen and (min-width: 501px) and (max-width: 1023px) {
+  @media screen and (min-width: 501px) and (max-width: 1535px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,7 +96,7 @@ const DivTextH3 = styled.h3`
     font-size: 16px;
     margin-top: 2rem;
   }
-  @media screen and (min-width: 501px) and (max-width: 1024px) {
+  @media screen and (min-width: 501px) and (max-width: 1535px) {
     font-size: 24px;
     margin-top: 4rem;
   }
@@ -114,7 +113,7 @@ const DivTextH2 = styled.h2`
     width: auto;
     margin-top: 1rem;
   }
-  @media screen and (min-width: 501px) and (max-width: 1024px) {
+  @media screen and (min-width: 501px) and (max-width: 1535px) {
     width: auto;
     font-size: 40px;
     margin-top: 0.5rem;
@@ -137,29 +136,28 @@ const DivTextP = styled.p`
     font-size: 15px;
     line-height: 25px;
   }
-  @media screen and ((min-width: 501px)and (max-width:1023px)) {
+  @media screen and ((min-width: 501px)and (max-width:1535px)) {
     font-size: 16px;
     line-height: 28px;
-    width: 80%;
-    border: 1px solid blue;
+    width: 95%;
     text-align: center;
     margin-top: 0;
     margin-bottom: 2rem;
-    height: auto;
+    height: 8rem;
   }
 `;
 const DivImg = styled.img`
-  width: 30%;
-  height: 70%;
+  width: 25rem;
+  height: 39rem;
   margin-top: -2rem;
   @media screen and (max-width: 500px) {
-    width: 50%;
-    height: 35%;
+    width: 15rem;
+    height: 21rem;
     margin-top: 0;
   }
-  @media screen and ((min-width: 501px)and (max-width:1023px)) {
-    width: 50%;
-    max-height: 60vh;
+  @media screen and ((min-width: 501px)and (max-width:1535px)) {
+    width: auto;
+    height: 20.5rem;
     margin-top: 1rem;
   }
 `;
@@ -170,7 +168,7 @@ const DivSlider = styled.div`
     margin-top: 2rem;
     order: -1;
   }
-  @media screen and ((min-width: 501px)and (max-width:1023px)) {
+  @media screen and ((min-width: 501px)and (max-width:1535px)) {
     margin-top: 0;
   }
 `;
