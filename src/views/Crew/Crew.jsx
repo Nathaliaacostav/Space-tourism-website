@@ -15,7 +15,7 @@ const DivContainer = styled.div`
   @media screen and (max-width: 500px) {
     padding-left: 0;
   }
-  @media screen and (min-width: 501px) and (max-width: 1535px) {
+  @media screen and (min-width: 501px) and (max-width: 1100px) {
     padding-left: 2.5rem;
   }
 `;
