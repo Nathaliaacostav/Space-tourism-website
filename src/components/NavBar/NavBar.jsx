@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom';
 import '../../sass/NavBar/NavBar.scss';
 
@@ -8,7 +7,6 @@ const NavBar = () => {
         ['01','destination'],
         ['02', 'crew'],
         ['03', 'technology'],
-    
     ]
   return (
     <div className='navDestock'>
