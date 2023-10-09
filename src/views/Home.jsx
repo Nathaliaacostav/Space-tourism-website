@@ -4,7 +4,7 @@ import(
 import styled from "styled-components";
 
 const Section = styled.section`
-  background-image: url("https://res.cloudinary.com/dhhyc88td/image/upload/v1696461867/Bitmap_hk4dcx.jpg");
+  background-image: url("/HomeBg.jpg");
   background-size: cover;
   height: 100vh;
   width: 100%;
