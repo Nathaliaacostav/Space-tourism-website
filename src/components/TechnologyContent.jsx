@@ -1,10 +1,10 @@
 import { useState } from "react";
-import launch from "/public/launch-vehicle.jpg";
-import spaceport from "/public/spaceport.jpg";
-import spacecapsule from "/public/spacecapsule.jpg";
-import spaceportTable from "/public/spaceport-table.png";
-import spacecapsuleTable from "/public/spacecapsule-table.png";
-import launchTable from "/public/launch-vehicle-table.jpg";
+import launch from "/launch-vehicle.jpg";
+import spaceport from "/spaceport.jpg";
+import spacecapsule from "/spacecapsule.jpg";
+import spaceportTable from "/spaceport-table.png";
+import spacecapsuleTable from "/spacecapsule-table.png";
+import launchTable from "/launch-vehicle-table.jpg";
 import styled from "styled-components";
 import { generateMedia } from "styled-media-query";
 import "../sass/global.scss";
@@ -15,26 +15,25 @@ const customMedia = generateMedia({
 });
 
 const DivContainer = styled.div`
-  width: 1440px;
-  height: 900px;
+  box-sizing: border-box;
+  padding-top: 180px;
+  width: 100vw;
+  height: 100vh;
   background-color: #0b0d17;
   background-image: url("/backgrounTechnology.png");
 
   ${customMedia.lessThan("tablet")`
-      width: 768px;
-      height: 1024px;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
   `};
 `;
 const DivContainerTechno = styled.div`
   display: flex;
-  padding-top: 100px;
-  margin-left: 167px;
   gap: 24px;
-
+  padding: 0 50px;
   ${customMedia.lessThan("tablet")`
-        position: relative;
-        right: 130px;
-        top: -50px;
     `};
 `;
 const PtextNum = styled.p`
@@ -77,9 +76,11 @@ const PtextTitle = styled.p`
     `};
 `;
 const DivSlider = styled.div`
+  gap: 50px;
   display: flex;
-  flex-direction: row;
-  margin-left: 140px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
 
   ${customMedia.lessThan("tablet")`
     display: flex;
@@ -93,18 +94,18 @@ const Divbuttons = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   position: relative;
   cursor: pointer;
+  margin: 0;
 
   ${customMedia.lessThan("tablet")`
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    position: relative;
-    top: 300px;
-    right: 70px;
     cursor: pointer;
+    margin: 0;
   `};
 `;
 const DivbuttonsItem = styled.div`
@@ -118,7 +119,6 @@ const DivContentSlider = styled.div`
 
   ${customMedia.lessThan("tablet")`
     display: flex;
-    width: 458px;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
@@ -199,11 +199,11 @@ const DivSecondText = styled.div`
     `};
 `;
 const DivImg = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
   ${customMedia.lessThan("tablet")`
-      width: 768px;
-      height: 310px;
-      position: relative;
-      top: -110px;
+      width: 100%;
     `};
 `;
 const Imgdesktop = styled.img`
@@ -216,6 +216,7 @@ const ImgTable = styled.img`
   display: none;
   ${customMedia.lessThan("tablet")`
       display: block;
+      width: 100%;
     `};
 `;
 const SvgDesktop = styled.svg`
@@ -273,6 +274,10 @@ function TechnologyContent() {
         <PtextTitle>SPACE LAUNCH 101</PtextTitle>
       </DivContainerTechno>
       <DivSlider>
+        <DivImg>
+          <Imgdesktop src={items[indexActual].img} alt="img" />
+          <ImgTable src={items[indexActual].table} alt="img-table" />
+        </DivImg>
         <Divbuttons>
           {items.map((_, idx) => {
             return (
@@ -394,10 +399,6 @@ function TechnologyContent() {
               <p>{items[indexActual].text}</p>
             </Divcontent>
           </Divtext>
-          <DivImg>
-            <Imgdesktop src={items[indexActual].img} alt="img" />
-            <ImgTable src={items[indexActual].table} alt="img-table" />
-          </DivImg>
         </DivContentSlider>
       </DivSlider>
     </DivContainer>
