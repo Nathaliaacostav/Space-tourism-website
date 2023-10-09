@@ -4,14 +4,14 @@ import { SliderCrew } from "../../components/SliderCrew/SliderCrew";
 
 const DivPrincipal = styled.div`
   width: 100%;
-  height: 900px;
+  height: 100vh;
   background-image: url("/ImgCrew/Bitmap.png");
-  background-size: 100% 100%;
+  background-size: cover;
+  box-sizing: border-box;
 `;
 
 const DivContainer = styled.div`
   padding-left: 12rem;
-
   @media screen and (max-width: 500px) {
     padding-left: 0;
   }
@@ -44,6 +44,7 @@ const H2 = styled.h2`
   font-weight: 400;
   word-wrap: break-word;
   padding-top: 15rem;
+  margin: 0;
 
   @media screen and (max-width: 500px) {
     font-size: 16px;
