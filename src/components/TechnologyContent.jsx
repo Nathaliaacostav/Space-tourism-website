@@ -405,7 +405,7 @@ const Divbuttons = styled.div`
   position: relative;
   cursor: pointer;
 
-  ${customMedia.lessThan("tablet")`
+  @media screen and (min-width: 501px)and (max-width:1100px)
     display: flex;
     flex-direction: row;
     justify-content: center;
