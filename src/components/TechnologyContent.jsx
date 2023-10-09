@@ -18,12 +18,11 @@ const DivContainer = styled.div`
   width: 1440px;
   height: 900px;
   background-color: #0b0d17;
-  background-image: url("/public/backgrounTechnology.png");
+  background-image: url("/backgrounTechnology.png");
 
   ${customMedia.lessThan("tablet")`
       width: 768px;
       height: 1024px;
-      
   `};
 `;
 const DivContainerTechno = styled.div`
