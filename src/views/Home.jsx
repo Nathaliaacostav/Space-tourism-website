@@ -15,14 +15,24 @@ const Section = styled.section`
   align-items: flex-end;
   padding: 0 10%;
   padding-bottom: 50px;
-  @media (min-width: 768px) and (min-height: 1024px) {
+  @media (max-width: 1024px) {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/HomeAltBg.jpg");
   }
   @media (min-width: 375px) {
   }
 `;
 
 const Div1 = styled.div`
-  @media (min-width: 768px) and (min-height: 1024px) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  @media (max-width: 1024px) {
+    align-items: center;
   }
   @media (min-width: 375px) and (min-height: 667px) {
   }
@@ -38,6 +48,9 @@ const Subtitle = styled.h3`
   letter-spacing: 4.72px;
   color: #d0d6f9;
   font-family: "Barlow Condensed", sans-serif;
+  @media (max-width: 1024px) {
+    padding: 0;
+  }
   @media (min-width: 768px) and (min-height: 1024px) {
     font-weight: 400;
     font-size: 20px;
@@ -64,21 +77,6 @@ const H1 = styled.h1`
   color: #ffff;
   font-family: "Bellefair", serif;
   margin: 0;
-  @media (min-width: 768px) and (min-height: 1024px) {
-    font-weight: 400;
-    font-size: 100px;
-    line-height: 150px;
-    color: #ffff;
-    font-family: "Bellefair", serif;
-  }
-  @media (min-width: 375px) and (min-height: 667px) {
-    font-weight: 400;
-    font-size: 80px;
-    line-height: 100px;
-    align-items: center;
-    color: #ffff;
-    font-family: "Bellefair", serif;
-  }
 `;
 
 const P1 = styled.p`
@@ -88,21 +86,8 @@ const P1 = styled.p`
   line-height: 32px;
   color: #d0d6f9;
   font-family: "Barlow", sans-serif;
-  @media (min-width: 768px) and (min-height: 1024px) {
-    width: 444px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
-    color: #d0d6f9;
-    font-family: "Barlow", sans-serif;
-  }
-  @media (min-width: 375px) and (min-height: 667px) {
-    width: 327px;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 25px;
-    color: #d0d6f9;
-    font-family: "Barlow", sans-serif;
+  @media (max-width: 1024px) {
+    font-size: 24px;
   }
 `;
 const Button = styled.button`

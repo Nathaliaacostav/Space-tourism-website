@@ -1,29 +1,60 @@
-.navDestock {
+@import "../../sass/global.scss";
+.border {
+  a {
+    border-bottom: 3px solid $white;
+    padding-bottom: 1.8rem;
+  }
+}
+.navDivider {
   position: absolute;
+  z-index: 100;
+  left: 150px;
+  top: 2.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  width: 38rem;
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  right: 0;
+  top: 2rem;
+  @media (max-width: 1024px) {
+    top: 0;
+  }
+}
+
+.navDestock {
   display: flex;
   align-items: center;
   justify-content: end;
   background-color: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(7px);
-  right: 0;
   height: 5rem;
-  top: 2rem;
+  backdrop-filter: blur(7px);
   &__navegacion {
-    padding-right: 5rem;
     display: flex;
     font-size: 16px;
+    gap: 50px;
     list-style: none;
     font-family: "Barlow", sans-serif;
     font-weight: 400;
+    padding: 0 9rem;
+    @media (max-width: 1024px) {
+      padding: 0 5rem;
+    }
     &__link {
       & a {
         text-decoration: none;
         color: white;
-        margin-right: 1.5rem;
         text-transform: uppercase;
+        letter-spacing: 2.7px;
         &:hover {
           cursor: pointer;
-          border-bottom: 4px solid white;
         }
       }
     }
