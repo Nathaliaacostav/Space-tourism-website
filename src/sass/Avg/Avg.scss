@@ -1,0 +1,21 @@
+@import "../global.scss";
+
+.title {
+  color: $text-alt;
+  font-family: $font-barlow-cond;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.362px;
+  text-transform: uppercase;
+}
+.body {
+  color: #fff;
+  font-family: $font-bellefair;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
