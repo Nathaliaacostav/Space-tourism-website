@@ -1,42 +1,40 @@
 import { useState } from "react";
-import launch from "/launch-vehicle.jpg";
-import spaceport from "/spaceport.jpg";
-import spacecapsule from "/spacecapsule.jpg";
-import spaceportTable from "/spaceport-table.png";
-import spacecapsuleTable from "/spacecapsule-table.png";
-import launchTable from "/launch-vehicle-table.jpg";
+import launch from "/public/launch-vehicle.jpg";
+import spaceport from "/public/spaceport.jpg";
+import spacecapsule from "/public/spacecapsule.jpg";
+import spaceportTable from "/public/spaceport-table.png";
+import spacecapsuleTable from "/public/spacecapsule-table.png";
+import launchTable from "/public/launch-vehicle-table.jpg";
 import styled from "styled-components";
-import { generateMedia } from "styled-media-query";
-import "../sass/global.scss";
 
-const customMedia = generateMedia({
-  desktop: "1440px",
-  tablet: "1024px",
-});
-
-const DivContainer = styled.div`
-  box-sizing: border-box;
-  padding-top: 180px;
-  width: 100vw;
-  height: 100vh;
-  background-image: url("/backgrounTechnology.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+const Section = styled.section`
+  background-image: url("/backgrounTechnology.png");
+  background-color: #0b0d17;
   background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 
-  ${customMedia.lessThan("tablet")`
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-  `};
+  @media screen and (min-width: 501px) and (max-width: 1100px) {
+  }
 `;
 const DivContainerTechno = styled.div`
   display: flex;
-  gap: 24px;
-  padding: 0 120px;
-  ${customMedia.lessThan("tablet")`
-    `};
+  flex-direction: row;
+  width: 300px;
+  height: 40px;
+  margin-top: 10rem;
+  margin-left: 7rem;
+  position: absolute;
+  gap: 1rem;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  @media screen and (min-width: 501px) and (max-width: 1100px) {
+    margin-left: 2rem;
+  }
 `;
 const PtextNum = styled.p`
   color: #fff;
@@ -47,16 +45,8 @@ const PtextNum = styled.p`
   line-height: normal;
   letter-spacing: 4.725px;
   opacity: 0.25;
-
-  ${customMedia.lessThan("tablet")`
-        color: #FFF;
-        font-family: Barlow Condensed;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 3.375px;  
-`};
+  @media screen and (min-width: 501px) and (max-width: 1100px) {
+  }
 `;
 const PtextTitle = styled.p`
   color: #fff;
@@ -66,81 +56,74 @@ const PtextTitle = styled.p`
   font-weight: 400;
   line-height: normal;
   letter-spacing: 4.725px;
-  ${customMedia.lessThan("tablet")`
-      color: #FFF;
-      font-family: Barlow Condensed;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      letter-spacing: 3.375px;
-      text-transform: uppercase;
-    `};
+  @media screen and (min-width: 501px) and (max-width: 1100px) {
+  }
 `;
 const DivSlider = styled.div`
-  gap: 50px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  height: 100%;
+  margin-top: 10%;
+  margin-left: 7rem;
+  justify-content: space-arround;
   align-items: center;
-  flex-direction: row-reverse;
-
-  ${customMedia.lessThan("tablet")`
-    display: flex;
+  @media screen and (min-width: 501px) and (max-width: 1100px) {
     flex-direction: column;
-    justify-content: center;
-    position: relative;
-    cursor: pointer;
-  `};
+    margin-left: 0;
+    margin-top: 4rem;
+  }
 `;
 const Divbuttons = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
-  margin-left: 120px;
+  gap: 35px;
+  margin-right: 3.5rem;
+  margin-top: 1rem;
 
-  ${customMedia.lessThan("tablet")`
+  @media screen and (min-width: 501px) and (max-width: 1100px) {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    margin: 0;
-  `};
+    gap: 35px;
+    position: relative;
+    top: 35rem;
+  }
 `;
 const DivbuttonsItem = styled.div`
-  margin: 10px;
+  &:hover {
+    cursor: pointer;
+  }
 `;
 const DivContentSlider = styled.div`
   display: flex;
-  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  margin-left: 3rem;
   justify-content: space-between;
   align-items: center;
-
-  ${customMedia.lessThan("tablet")`
-    display: flex;
+  @media screen and (min-width: 501px) and (max-width: 1100px) {
+    margin-top: 5rem;
+    margin-left: 0;
     flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-  `};
+    justify-content: none;
+    height: 70%;
+  }
 `;
 const Divtext = styled.div`
   width: 500px;
-  height: 271px;
+  height: 303px;
   flex-shrink: 0;
-  margin-right: 80px;
-  margin-left: 40px;
-  ${customMedia.lessThan("tablet")`
-      display: flex;
-      width: 458px;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 16px;
-    `};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: scale(1.5);
+  margin-left: 10rem;
+  @media screen and (min-width: 501px) and (max-width: 1100px) {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1);
+    margin-left: 0;
+  }
 `;
 const DivOnetext = styled.div`
   color: #d0d6f9;
@@ -149,19 +132,12 @@ const DivOnetext = styled.div`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 2.7px;
-  ${customMedia.lessThan("tablet")`´
-          display: flex;      
-          position: relative;
-          top: 50px;
-          color: #D0D6F9;
-          font-family: Barlow Condensed;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-          letter-spacing: 2.7px;
-    `};
+  letter-spacing: 1.7px p {
+    margin: 0;
+    padding: 0.5rem;
+  }
+  @media screen and (min-width: 501px) and (max-width: 1100px) {
+  }
 `;
 const Divcontent = styled.div`
   color: #d0d6f9;
@@ -169,16 +145,19 @@ const Divcontent = styled.div`
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px;
-  ${customMedia.lessThan("tablet")`
-          color: #D0D6F9;
-          text-align: center;
-          font-family: Barlow;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 28px; /* 175% */
-      `};
+  line-height: 32px; /* 177.778% */
+  p {
+    margin: 0;
+    padding: 0.5rem;
+  }
+  @media screen and (min-width: 501px) and (max-width: 1100px) {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+  }
 `;
 
 const DivSecondText = styled.div`
@@ -186,53 +165,53 @@ const DivSecondText = styled.div`
   font-family: Bellefair;
   font-size: 56px;
   font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  font-weight: 100;
+  width: 100%;
 
-  ${customMedia.lessThan("tablet")`
-      color: #FFF;
-      text-align: center;
-      font-family: Bellefair;
-      font-size: 40px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      text-transform: uppercase;
-    `};
+  p {
+    margin: 0;
+    padding: 0.5rem;
+  }
+  @media screen and (min-width: 501px) and (max-width: 1100px) {
+    width: auto;
+  }
 `;
 const DivImg = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  ${customMedia.lessThan("tablet")`
-      width: 100%;
-    `};
+  width: 40rem;
+  hegith: 70rem;
+  @media screen and (min-width: 501px) and (max-width: 1100px) {
+    width: 100%;
+  }
 `;
 const Imgdesktop = styled.img`
-  display: bock;
-  ${customMedia.lessThan("tablet")`
-      display: none;
-    `};
+  width: 100%;
+  height: 100%;
+  @media screen and (min-width: 501px) and (max-width: 1100px) {
+    display: none;
+  }
 `;
 const ImgTable = styled.img`
   display: none;
-  ${customMedia.lessThan("tablet")`
-      display: block;
-      width: 100%;
-    `};
+  @media screen and (min-width: 501px) and (max-width: 1100px) {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 `;
 const SvgDesktop = styled.svg`
-  display: block;
-  ${customMedia.lessThan("tablet")`
-      display: none;
-  `};
+  &:hover {
+    cursor: pointer;
+  }
+  @media screen and (min-width: 501px) and (max-width: 1100px) {
+    display: none;
+  }
 `;
 
 const SvgTable = styled.svg`
   display: none;
-  ${customMedia.lessThan("tablet")`
-      display: block;
-  `};
+  @media screen and (min-width: 501px) and (max-width: 1100px) {
+    display: block;
+  }
 `;
 
 function TechnologyContent() {
@@ -270,30 +249,12 @@ function TechnologyContent() {
   };
 
   return (
-    <DivContainer>
+    <Section>
       <DivContainerTechno>
         <PtextNum>03</PtextNum>
         <PtextTitle>SPACE LAUNCH 101</PtextTitle>
       </DivContainerTechno>
       <DivSlider>
-        <DivImg>
-          <Imgdesktop src={items[indexActual].img} alt="img" />
-          <ImgTable src={items[indexActual].table} alt="img-table" />
-        </DivImg>
-
-        <DivContentSlider>
-          <Divtext>
-            <DivOnetext>
-              <p>THE TERMINOLOGY…</p>
-            </DivOnetext>
-            <DivSecondText>
-              <p>{items[indexActual].title}</p>
-            </DivSecondText>
-            <Divcontent>
-              <p>{items[indexActual].text}</p>
-            </Divcontent>
-          </Divtext>
-        </DivContentSlider>
         <Divbuttons>
           {items.map((_, idx) => {
             return (
@@ -318,7 +279,7 @@ function TechnologyContent() {
                         x="40"
                         y="46"
                         fill="black"
-                        fontSize="50"
+                        fontSize="30"
                         textAnchor="middle"
                         alignmentBaseline="middle"
                       >
@@ -337,7 +298,7 @@ function TechnologyContent() {
                         x="30"
                         y="35"
                         fill="black"
-                        fontSize="40"
+                        fontSize="30"
                         textAnchor="middle"
                         alignmentBaseline="middle"
                       >
@@ -365,7 +326,7 @@ function TechnologyContent() {
                         x="40"
                         y="46"
                         fill="white"
-                        fontSize="50"
+                        fontSize="30"
                         textAnchor="middle"
                         alignmentBaseline="middle"
                       >
@@ -403,8 +364,25 @@ function TechnologyContent() {
             );
           })}
         </Divbuttons>
+        <DivContentSlider>
+          <Divtext>
+            <DivOnetext>
+              <p>THE TERMINOLOGY…</p>
+            </DivOnetext>
+            <DivSecondText>
+              <p>{items[indexActual].title}</p>
+            </DivSecondText>
+            <Divcontent>
+              <p>{items[indexActual].text}</p>
+            </Divcontent>
+          </Divtext>
+          <DivImg>
+            <Imgdesktop src={items[indexActual].img} alt="img" />
+            <ImgTable src={items[indexActual].table} alt="img-table" />
+          </DivImg>
+        </DivContentSlider>
       </DivSlider>
-    </DivContainer>
+    </Section>
   );
 }
 
