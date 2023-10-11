@@ -201,6 +201,10 @@ const Divtext = styled.div`
   }
   @media screen and (max-width: 500px) {
     width: 100%;
+<<<<<<< HEAD
+=======
+    border: 1px solid red;
+>>>>>>> a0433ba (remove public imports)
   }
 `;
 const DivOnetext = styled.div`
