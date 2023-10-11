@@ -167,7 +167,6 @@ const DivContentSlider = styled.div`
     margin-left: 0;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
   }
   @media screen and (min-width: 501px) and (max-width: 1100px) {
     margin-top: 5rem;
@@ -202,7 +201,6 @@ const Divtext = styled.div`
   }
   @media screen and (max-width: 500px) {
     width: 100%;
-    border: 1px solid red;
   }
 `;
 const DivOnetext = styled.div`
@@ -245,7 +243,6 @@ const Divcontent = styled.div`
     align-items: center;
     text-align: center;
     font-size: 23px;
-    border: 1px solid red;
   }
 `;
 
