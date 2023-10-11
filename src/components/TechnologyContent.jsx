@@ -1,10 +1,10 @@
 import { useState } from "react";
-import launch from "/public/launch-vehicle.jpg";
-import spaceport from "/public/spaceport.jpg";
-import spacecapsule from "/public/spacecapsule.jpg";
-import spaceportTable from "/public/spaceport-table.png";
-import spacecapsuleTable from "/public/spacecapsule-table.png";
-import launchTable from "/public/launch-vehicle-table.jpg";
+import launch from "/launch-vehicle.jpg";
+import spaceport from "/spaceport.jpg";
+import spacecapsule from "/spacecapsule.jpg";
+import spaceportTable from "/spaceport-table.png";
+import spacecapsuleTable from "/spacecapsule-table.png";
+import launchTable from "/launch-vehicle-table.jpg";
 import styled from "styled-components";
 
 const Section = styled.section`
@@ -186,31 +186,24 @@ const Divtext = styled.div`
   justify-content: center;
   transform: scale(1.5);
   margin-left: 10rem;
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    transform: scale(0.9);
+  }
   @media screen and (min-width: 501px) and (max-width: 1100px) {
     width: 100%;
     justify-content: center;
-    transform: scale(1.5);
-    margin-left: 10rem;
-    @media screen and (max-width: 500px) {
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-      margin-left: 0;
-      transform: scale(0.9);
-    }
-    @media screen and (min-width: 501px)and (max-width:1100px)
-    {
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-      transform: scale(1);
-      margin-left: 0;
-    }
-    @media screen and (max-width:500px)
-    {
-      width: 100%;
-      border: 1px solid red;
-    }
+    align-items: center;
+    transform: scale(1);
+    margin-left: 0;
+  }
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    border: 1px solid red;
+  }
 `;
 const DivOnetext = styled.div`
   color: #d0d6f9;
