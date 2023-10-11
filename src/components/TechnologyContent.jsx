@@ -319,6 +319,7 @@ const SvgTable = styled.svg`
   @media screen and (min-width: 501px) and (max-width: 1100px) {
     display: block;
   }
+<<<<<<< HEAD
 `;
 
 const customMedia = generateMedia({
@@ -543,6 +544,8 @@ const SvgTable = styled.svg`
   ${customMedia.lessThan("tablet")`
       display: block;
   `};
+=======
+>>>>>>> b74cb5c (resolve technology conflicts)
 `;
 
 function TechnologyContent() {
