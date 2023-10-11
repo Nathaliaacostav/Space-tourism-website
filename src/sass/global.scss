@@ -20,9 +20,14 @@ $dark-gray: hsl(0, 0%, 55%);
 $very-dark-gray: hsl(0, 0%, 41%);
 $horizontal-padding: 10vw;
 
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+ 
   font-size: $font-size;
 }
 body {

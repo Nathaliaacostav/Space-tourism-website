@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Barlow:wght@100&family=Bellefair&display=swap");
+
+.home-container {
+  background-image: url("https://res.cloudinary.com/di90urdxw/image/upload/v1696954753/Bitmap_3_jy40ez.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 375px;
+  max-width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 80px;
+  box-sizing: border-box;
+  padding: 0 10%;
+  color: white;
+  @media (min-width: 1120px){
+    flex-direction: row;
+    row-gap: 0;
+    gap: 125px;
+    padding-top: 70px;
+
+  }
+  &__info {
+    width: 327px;
+    height: 276px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    @media (min-width: 1120px){
+      /* padding-top: 100px; */
+      align-items: flex-start;
+    }
+    &--subtitle {
+      font-family: "Barlow Condensed", sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 19.2px;
+      letter-spacing: 2.7px;
+      color: #d0d6f9;
+      @media (min-width: 768px) {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.38px;
+      }
+      @media (min-width: 1440px) {
+        font-size: 28px;
+        line-height: 33.6px;
+        letter-spacing: 4.72px;
+      }
+    }
+    &--title {
+      font-family: "Bellefair", serif;
+      font-weight: 400;
+      font-size: 80px;
+      line-height: 100px;
+      align-items: center;
+      color: #ffff;
+      @media (min-width: 768px) {
+        font-size: 150px;
+        line-height: 150px;
+      }
+      @media (min-width: 1440px) {
+        font-size: 150px;
+      }
+    }
+    &--text {
+      font-family: "Barlow", sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      color: #d0d6f9;
+      text-align: center;
+      @media (min-width: 768px) {
+        font-size: 16px;
+        line-height: 28px;
+      }
+      @media (min-width: 1120px) {
+        font-size: 18px;
+        line-height: 32px;
+        /* text-align: justify; */
+      }
+    }
+    @media (min-width: 768px) {
+      width: 450px;
+      height: 334px;
+    }
+    @media (min-width: 1120px) {
+      height: 382px;
+      align-items: flex-start;
+    }
+  }
+  &__button {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: none;
+    background-color: #FFFFFF;
+    font-family: "Bellefair", serif;
+    font-size: 20px;
+    color: #0B0D17;
+    &:hover {
+      box-shadow: 0px 0px 0px 33px #ffffff0a;
+    }
+    @media (min-width: 768px) {
+      width: 242px;
+      height: 242px;
+      font-size: 32px;
+    }
+    @media (min-width: 1440px) {
+      width: 274px;
+      height: 274px;
+    }
+  }
+
+
+  @media (min-width: 768px) {
+    background-image: url("https://res.cloudinary.com/di90urdxw/image/upload/v1696954585/Bitmap_2_uuc7oj.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 768px;
+    height: 100vh;
+    row-gap: 150px;
+  }
+  @media (min-width: 1440px) {
+    background-image: url("https://res.cloudinary.com/dhhyc88td/image/upload/v1696461867/Bitmap_hk4dcx.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+    column-gap: 390px;
+  }
+}
