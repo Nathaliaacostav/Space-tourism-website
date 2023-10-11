@@ -17,6 +17,12 @@ const Section = styled.section`
   box-sizing: border-box;
 
   @media screen and (min-width: 501px) and (max-width: 1100px) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
   }
 `;
 const DivContainerTechno = styled.div`
@@ -32,8 +38,19 @@ const DivContainerTechno = styled.div`
     margin: 0;
     padding: 0;
   }
+
+  @media screen and (max-width: 500px) {
+    padding-right: 0px;
+    margin-left: 0;
+    margin-top: 2rem;
+    width: 100%;
+    justify-content: center;
+  }
   @media screen and (min-width: 501px) and (max-width: 1100px) {
+    position: relative;
     margin-left: 2rem;
+    margin-top: 6rem;
+    display: flex;
   }
 `;
 const PtextNum = styled.p`
@@ -45,6 +62,15 @@ const PtextNum = styled.p`
   line-height: normal;
   letter-spacing: 4.725px;
   opacity: 0.25;
+  @media screen and (max-width: 500px) {
+    color: #fff;
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.7px;
+  }
   @media screen and (min-width: 501px) and (max-width: 1100px) {
   }
 `;
@@ -56,6 +82,16 @@ const PtextTitle = styled.p`
   font-weight: 400;
   line-height: normal;
   letter-spacing: 4.725px;
+  @media screen and (max-width: 500px) {
+    color: #fff;
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+  }
   @media screen and (min-width: 501px) and (max-width: 1100px) {
   }
 `;
@@ -67,10 +103,15 @@ const DivSlider = styled.div`
   margin-left: 7rem;
   justify-content: space-arround;
   align-items: center;
+  @media screen and (max-width: 500px) {
+    display: flex;
+    margin-left: 0;
+    margin-top: 0;
+  }
   @media screen and (min-width: 501px) and (max-width: 1100px) {
     flex-direction: column;
     margin-left: 0;
-    margin-top: 4rem;
+    margin-top: 0;
   }
 `;
 const Divbuttons = styled.div`
@@ -81,11 +122,29 @@ const Divbuttons = styled.div`
   margin-top: 1rem;
 
   @media screen and (min-width: 501px) and (max-width: 1100px) {
+    display: none;
+  }
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
+`;
+
+const DivButtonsTablet = styled.div`
+  display: none;
+  @media screen and (min-width: 501px) and (max-width: 1100px) {
     display: flex;
     flex-direction: row;
-    gap: 35px;
-    position: relative;
-    top: 35rem;
+    gap: 20px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  @media screen and (max-width: 500px) {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    transform: scale(0.5);
+    margin-top: 2%;
+    margin-bottom: 2%;
   }
 `;
 const DivbuttonsItem = styled.div`
@@ -100,6 +159,16 @@ const DivContentSlider = styled.div`
   margin-left: 3rem;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 500px) {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+  }
   @media screen and (min-width: 501px) and (max-width: 1100px) {
     margin-top: 5rem;
     margin-left: 0;
@@ -120,10 +189,28 @@ const Divtext = styled.div`
   @media screen and (min-width: 501px) and (max-width: 1100px) {
     width: 100%;
     justify-content: center;
-    align-items: center;
-    transform: scale(1);
-    margin-left: 0;
-  }
+    transform: scale(1.5);
+    margin-left: 10rem;
+    @media screen and (max-width: 500px) {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin-left: 0;
+      transform: scale(0.9);
+    }
+    @media screen and (min-width: 501px)and (max-width:1100px)
+    {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      transform: scale(1);
+      margin-left: 0;
+    }
+    @media screen and (max-width:500px)
+    {
+      width: 100%;
+      border: 1px solid red;
+    }
 `;
 const DivOnetext = styled.div`
   color: #d0d6f9;
@@ -158,6 +245,15 @@ const Divcontent = styled.div`
     text-align: center;
     font-size: 20px;
   }
+  @media screen and (max-width: 500px) {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 23px;
+    border: 1px solid red;
+  }
 `;
 
 const DivSecondText = styled.div`
@@ -175,11 +271,20 @@ const DivSecondText = styled.div`
   @media screen and (min-width: 501px) and (max-width: 1100px) {
     width: auto;
   }
+  @media screen and (max-width: 500px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+  }
 `;
 const DivImg = styled.div`
   width: 40rem;
   hegith: 70rem;
   @media screen and (min-width: 501px) and (max-width: 1100px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 500px) {
     width: 100%;
   }
 `;
@@ -189,11 +294,19 @@ const Imgdesktop = styled.img`
   @media screen and (min-width: 501px) and (max-width: 1100px) {
     display: none;
   }
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 `;
 const ImgTable = styled.img`
   display: none;
   @media screen and (min-width: 501px) and (max-width: 1100px) {
     display: block;
+    width: 100%;
+    height: 100%;
+  }
+  @media screen and (max-width: 500px) {
+    display: flex;
     width: 100%;
     height: 100%;
   }
@@ -376,6 +489,115 @@ function TechnologyContent() {
               <p>{items[indexActual].text}</p>
             </Divcontent>
           </Divtext>
+          <DivButtonsTablet>
+            {items.map((_, idx) => {
+              return (
+                <div key={idx} onClick={() => goToSlide(idx)}>
+                  {indexActual === idx ? (
+                    <DivbuttonsItem>
+                      <SvgDesktop
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="80"
+                        height="80"
+                        viewBox="0 0 80 80"
+                        fill="white"
+                      >
+                        <circle
+                          opacity="1"
+                          cx="40"
+                          cy="40"
+                          r="39.5"
+                          stroke="white"
+                        />
+                        <text
+                          x="40"
+                          y="46"
+                          fill="black"
+                          fontSize="30"
+                          textAnchor="middle"
+                          alignmentBaseline="middle"
+                        >
+                          {idx + 1}
+                        </text>
+                      </SvgDesktop>
+                      <SvgTable
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="60"
+                        height="60"
+                        viewBox="0 0 60 60"
+                        fill="none"
+                      >
+                        <circle cx="30" cy="30" r="30" fill="white" />
+                        <text
+                          x="30"
+                          y="35"
+                          fill="black"
+                          fontSize="30"
+                          textAnchor="middle"
+                          alignmentBaseline="middle"
+                        >
+                          {idx + 1}
+                        </text>
+                      </SvgTable>
+                    </DivbuttonsItem>
+                  ) : (
+                    <DivbuttonsItem>
+                      <SvgDesktop
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="80"
+                        height="80"
+                        viewBox="0 0 80 80"
+                        fill="none"
+                      >
+                        <circle
+                          opacity="0.25"
+                          cx="40"
+                          cy="40"
+                          r="39.5"
+                          stroke="white"
+                        />
+                        <text
+                          x="40"
+                          y="46"
+                          fill="white"
+                          fontSize="30"
+                          textAnchor="middle"
+                          alignmentBaseline="middle"
+                        >
+                          {idx + 1}
+                        </text>
+                      </SvgDesktop>
+                      <SvgTable
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="60"
+                        height="60"
+                        viewBox="0 0 60 60"
+                        fill="none"
+                      >
+                        <circle
+                          opacity="0.25"
+                          cx="30"
+                          cy="30"
+                          r="29.5"
+                          stroke="white"
+                        />
+                        <text
+                          x="30"
+                          y="35"
+                          fill="white"
+                          fontSize="40"
+                          textAnchor="middle"
+                          alignmentBaseline="middle"
+                        >
+                          {idx + 1}
+                        </text>
+                      </SvgTable>
+                    </DivbuttonsItem>
+                  )}
+                </div>
+              );
+            })}
+          </DivButtonsTablet>
           <DivImg>
             <Imgdesktop src={items[indexActual].img} alt="img" />
             <ImgTable src={items[indexActual].table} alt="img-table" />
