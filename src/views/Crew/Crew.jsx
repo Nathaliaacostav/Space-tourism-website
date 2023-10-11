@@ -8,10 +8,12 @@ const DivPrincipal = styled.div`
   background-image: url("/ImgCrew/Bitmap.png");
   background-size: cover;
   box-sizing: border-box;
+  
 `;
 
 const DivContainer = styled.div`
   padding-left: 12rem;
+  
   @media screen and (max-width: 500px) {
     padding-left: 0;
   }
@@ -22,7 +24,7 @@ const DivContainer = styled.div`
 const DivTextImg = styled.div`
   display: flex;
   height: 100%;
-  width: 100%;
+  width: 95%;
   @media screen and (max-width: 500px) {
     flex-direction: column-reverse;
     justify-content: center;
@@ -43,7 +45,7 @@ const H2 = styled.h2`
   font-family: "Barlow", sans-serif;
   font-weight: 400;
   word-wrap: break-word;
-  padding-top: 15rem;
+  padding-top: 15%;
   margin: 0;
 
   @media screen and (max-width: 500px) {
@@ -52,7 +54,7 @@ const H2 = styled.h2`
     display: flex;
     justify-content: center;
     letter-spacing: 2.7px;
-    font-family: "Barlow Condensed", sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
   }
   @media screen and (min-width: 501px) and (max-width: 1100px) {
     padding-top: 10rem;
@@ -86,15 +88,16 @@ const DivText = styled.div`
   }
 `;
 const DivTextH3 = styled.h3`
-  font-size: 32px;
+
+  font-size: 28px;
   font-family: "Bellefair", serif;
   font-weight: 400;
   text-transform: upperCase;
   opacity: 0.4;
-  margin-top: 6rem;
+  margin-top: 4rem;
   margin-bottom: 0;
   @media screen and (max-width: 500px) {
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 2rem;
   }
   @media screen and (min-width: 501px) and (max-width: 1100px) {
@@ -103,12 +106,13 @@ const DivTextH3 = styled.h3`
   }
 `;
 const DivTextH2 = styled.h2`
-  font-size: 56px;
+  font-size: 52px;
   font-family: "Bellefair", serif;
   font-weight: 400;
   text-transform: upperCase;
   width: 40rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   @media screen and (max-width: 500px) {
     font-size: 24px;
     width: auto;
@@ -122,44 +126,49 @@ const DivTextH2 = styled.h2`
   }
 `;
 const DivTextP = styled.p`
+
   width: 28rem;
-  height: 15rem;
+  height: 9rem;
   color: #d0d6f9;
-  font-size: 18px;
+  font-size: 14px;
   font-family: "Barlow", sans-serif;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 28px;
+  
   @media screen and (max-width: 500px) {
     display: flex;
     text-align: center;
     width: 100%;
     height: 8rem;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 25px;
   }
   @media screen and ((min-width: 501px)and (max-width:1100px)) {
-    font-size: 16px;
+    
+    font-size: 18px;
     line-height: 28px;
-    width: 95%;
+    width: 60%;
     text-align: center;
     margin-top: 0;
     margin-bottom: 2rem;
-    height: 8rem;
+    height: 10rem;
   }
 `;
 const DivImg = styled.img`
-  width: 25rem;
-  height: 39rem;
-  margin-top: -2rem;
+  width: 20rem;
+  height: 25rem;
+  margin-top: -1.5rem;
+  
   @media screen and (max-width: 500px) {
     width: 15rem;
     height: 21rem;
     margin-top: 0;
   }
   @media screen and ((min-width: 501px)and (max-width:1100px)) {
-    width: auto;
-    height: 20.5rem;
-    margin-top: 1rem;
+    width: 50%;
+    height: 30rem;
+    margin-top: 3rem;
+    
   }
 `;
 
