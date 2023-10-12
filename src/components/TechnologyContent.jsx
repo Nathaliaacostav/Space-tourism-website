@@ -15,7 +15,6 @@ const Section = styled.section`
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-
   @media screen and (min-width: 501px) and (max-width: 1100px) {
     display: flex;
     flex-direction: column;
@@ -103,7 +102,6 @@ const DivSlider = styled.div`
   margin-left: 7rem;
   justify-content: space-arround;
   align-items: center;
-  border: 1px solid red;
   @media screen and (max-width: 500px) {
     display: flex;
     margin-left: 0;
@@ -122,7 +120,6 @@ const Divbuttons = styled.div`
   gap: 35px;
   margin-right: 3.5rem;
   margin-top: 1rem;
-  border: 1px solid red;
   @media screen and (min-width: 501px) and (max-width: 1100px) {
     display: none;
   }
@@ -145,8 +142,8 @@ const DivButtonsTablet = styled.div`
     flex-direction: row;
     gap: 20px;
     transform: scale(0.5);
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-top: 15%;
+    margin-bottom: 10%;
   }
 `;
 
@@ -163,7 +160,6 @@ const DivContentSlider = styled.div`
   margin-left: 3rem;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
   @media screen and (max-width: 500px) {
     display: flex;
     flex-direction: column-reverse;
@@ -172,7 +168,6 @@ const DivContentSlider = styled.div`
     margin-left: 0;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
   }
   @media screen and (min-width: 501px)and (max-width:1100px)
   {    
@@ -191,7 +186,7 @@ const Divtext = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid red;
+  margin-left: 5%;
   @media screen and (max-width: 500px) {
     width: 100%;
     justify-content: center;
@@ -276,7 +271,6 @@ const DivSecondText = styled.div`
   }
 `;
 const DivImg = styled.div`
-  border: 1px solid red;
   @media screen and (min-width: 501px) and (max-width: 1100px) {
     width: 100%;
   }
@@ -291,7 +285,6 @@ const DivImg = styled.div`
 const Imgdesktop = styled.img`
   width: 100%;
   height: 100%;
-  border: 1px solid red;
   @media screen and (min-width: 501px) and (max-width: 1100px) {
     display: none;
   }
