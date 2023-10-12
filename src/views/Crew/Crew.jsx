@@ -22,9 +22,11 @@ const DivContainer = styled.div`
   }
 `;
 const DivTextImg = styled.div`
+
   display: flex;
   height: 100%;
   width: 95%;
+  margin-top: 6%;
   @media screen and (max-width: 500px) {
     flex-direction: column-reverse;
     justify-content: center;
@@ -71,6 +73,7 @@ const H2span = styled.span`
 `;
 
 const DivText = styled.div`
+
   color: white;
   word-wrap: break-word;
 
@@ -89,7 +92,7 @@ const DivText = styled.div`
 `;
 const DivTextH3 = styled.h3`
 
-  font-size: 28px;
+  font-size: 32px;
   font-family: "Bellefair", serif;
   font-weight: 400;
   text-transform: upperCase;
@@ -106,12 +109,12 @@ const DivTextH3 = styled.h3`
   }
 `;
 const DivTextH2 = styled.h2`
-  font-size: 52px;
+  font-size: 56px;
   font-family: "Bellefair", serif;
   font-weight: 400;
   text-transform: upperCase;
   width: 40rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
   @media screen and (max-width: 500px) {
     font-size: 24px;
@@ -130,7 +133,7 @@ const DivTextP = styled.p`
   width: 28rem;
   height: 9rem;
   color: #d0d6f9;
-  font-size: 14px;
+  font-size: 18px;
   font-family: "Barlow", sans-serif;
   font-weight: 400;
   line-height: 28px;
@@ -140,7 +143,7 @@ const DivTextP = styled.p`
     text-align: center;
     width: 100%;
     height: 8rem;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 25px;
   }
   @media screen and ((min-width: 501px)and (max-width:1100px)) {
@@ -155,10 +158,9 @@ const DivTextP = styled.p`
   }
 `;
 const DivImg = styled.img`
-  width: 20rem;
-  height: 25rem;
-  margin-top: -1.5rem;
-  
+  width: 25rem;
+  height: 30rem;
+  margin-top: -3rem;
   @media screen and (max-width: 500px) {
     width: 15rem;
     height: 21rem;
@@ -174,6 +176,7 @@ const DivImg = styled.img`
 
 const DivSlider = styled.div`
   display: flex;
+  margin-top: 1rem;
   @media screen and (max-width: 500px) {
     margin-top: 2rem;
     order: -1;
@@ -183,6 +186,7 @@ const DivSlider = styled.div`
   }
 `;
 const SliderBottomOpacy = styled.div`
+
   width: 0.8rem;
   height: 0.8rem;
   background-color: white;
