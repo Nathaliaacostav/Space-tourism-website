@@ -4,13 +4,13 @@
 
 ## Índice
 - [Demo](#demo)
-- [Características](#características)
+- [Librerías Relevantes](#librerías-relevantes)
 - [Pasos Instalación](#pasos-instalación)
-- [Ejecutar localmente](#ejecutar-localmente)
-- [Tecnologías](#tecnologías)
+- [Dependencias de Desarrollo](#dependencias-de-desarrollo)
+- [Cómo empezar](#cómo-empezar)
 - [Despliegue](#despliegue)
-- [Recursos adicionales](#recursos-adicionales)
-- [Autores](#autores)
+- [Contribuciones](#contribuciones)
+- [Contacto](#contacto)
 
 ## Demo
 ![App Screenshot](https://res.cloudinary.com/dhhyc88td/image/upload/v1712157071/1_elxdva.png)
